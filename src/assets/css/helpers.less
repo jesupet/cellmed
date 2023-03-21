@@ -1,0 +1,57 @@
+.absolute {
+    position: absolute;
+}
+.b(@s, @c) {
+    border: @s solid @c;
+}
+.iblock {
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+.center {
+    text-align: center;
+}
+.cuadro(@l) {
+    width: @l;
+    height: @l;
+}
+.f(@s, @l) {
+    .f(@s);
+    line-height: @l;
+}
+
+.f(@s) {
+    font-size: @s;
+}
+
+.iblock {
+    display: inline-block;
+}
+
+.r(@r) {
+    .radio(@r);
+}
+.radio(@r) {
+    -webkit-border-radius: @r;
+    -moz-border-radius: @r;
+    border-radius: @r;
+}
+
+.relative {
+    position: relative;
+}
+.transition(@t) {
+  -webkit-transition: all @t 0s ease;
+  -moz-transition: all @t 0s ease;
+  -o-transition: all @t 0s ease;
+  transition: all @t 0s ease;
+}
+
+
+
+
+.w(@w) {
+    font-weight: @w;
+}
